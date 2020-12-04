@@ -1,4 +1,12 @@
-
+class Turtle:
+    def __init__(self, rows, columns):
+        self.rows = rows
+        self.columns = columns
+        self.canvas = [[0 for i in range(columns)] for j in range(rows)]
+        self.cur_x = 0
+        self.cur_y = 0
+        self.orientation = 0
+        
     def turn_right(self):
         self.reset_orientation()
         self.orientation += 1
